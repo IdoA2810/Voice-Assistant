@@ -10,16 +10,16 @@ from JarvisSpotify import *
 
 
 def initalize_spotify():
-    auth_manager = SpotifyOAuth(client_id = "21d4c17e287f4da19981024d5600e457",
-                                client_secret = "e55fd58cac6b4baf807ba84d0772b52a",
+    auth_manager = SpotifyOAuth(client_id = "",
+                                client_secret = "",
                                 redirect_uri = "https://example.com/callback/",
                                 scope = "user-read-private user-read-playback-state user-modify-playback-state",
-                                username = "w5f2ieytlrcz4u7v08boqqijd")
+                                username = "")
     spotify = sp.Spotify(auth_manager=auth_manager)
     return spotify
 
 def get_device_id(spotify):
-    device_name = "laptop-lvpifu49"
+    device_name = ""
     devices = spotify.devices()
 
     for d in devices['devices']:
