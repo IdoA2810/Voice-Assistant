@@ -12,7 +12,7 @@ from JarvisSpotify import *
 def initalize_spotify():
     auth_manager = SpotifyOAuth(client_id = "",
                                 client_secret = "",
-                                redirect_uri = "https://example.com/callback/",
+                                redirect_uri = "",
                                 scope = "user-read-private user-read-playback-state user-modify-playback-state",
                                 username = "")
     spotify = sp.Spotify(auth_manager=auth_manager)
